@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Page Title -->
-    <title>My Projects</title>
-    
-    <!-- External Resources -->
-    <link rel="stylesheet" href="style.css">         <!-- Main stylesheet -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">  <!-- Favicon -->
+    <title>My Projects | Himanshu Karpe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<!-- Body with fade-in animation class -->
 <body class="fade-in">
-    <!-- Page Header -->
     <header>
-        <h1>My Projects</h1>  <!-- Main page heading -->
+        <h1>My Projects</h1>
+        <nav aria-label="Breadcrumb">
+            <a href="index.html">Home</a> &gt; Projects
+        </nav>
     </header>
 
-    <!-- Main Content Container -->
     <main>
-        <!-- Project 1 Section -->
-        <section id="project1">
-            <h2>Smart Attendance System</h2>  <!-- Project title -->
+        <section id="project1" aria-labelledby="project1-heading">
+            <h2 id="project1-heading">Smart Attendance System</h2>
             
             <!-- Project description -->
             <p>This project involves creating a fingerprint-based attendance system using Arduino, ESP32, I2C LCD Display and a fingerprint sensor. The system captures fingerprints, stores them, and allows for attendance marking by recognizing the fingerprints.</p>
@@ -59,9 +53,8 @@
             <a href="Mini Project Sem IV.pdf" download="Miniproject_Sem-IV_2025">Download Project Report</a>
         </section>
 
-        <!-- Project 2 Section -->
-        <section id="project2">
-            <h2>Poster Series for Leo Club and Lions Club</h2>  <!-- Project title -->
+        <section id="project2" aria-labelledby="project2-heading">
+            <h2 id="project2-heading">Poster Series for Leo Club and Lions Club</h2>
             
             <!-- Project description -->
             <p>This project involved designing a series of posters for the Leo Club and Lions Club, focusing on community service and awareness campaigns.</p>
@@ -74,13 +67,9 @@
         </section>
     </main>
 
-    <!-- Page Footer -->
     <footer>
-        <!-- Navigation links -->
-        <a href="#">Back to Top</a>
+        <a href="#" aria-label="Back to top">Back to Top</a>
         <a href="index.html">Back to Home</a>
-        
-        <!-- Copyright notice -->
         <p>&lt;&lt;&lt;&copy; 2025 Himanshu Karpe. All rights reserved.&gt;&gt;&gt;</p>
     </footer>
 </body>

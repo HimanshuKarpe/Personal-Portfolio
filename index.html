@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Meta Information -->
-    <meta charset="UTF-8">  <!-- Character encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive viewport -->
-    <meta name="description" content="Portfolio of Himanshu Karpe">  <!-- SEO description -->
-    
-    <!-- Page Title -->
-    <title>Personal Portfolio</title>
-    
-    <!-- External Resources -->
-    <link rel="stylesheet" href="style.css">  <!-- Main stylesheet -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">  <!-- Favicon -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Himanshu Karpe - Electronics and Computer Engineering Student">
+    <title>Himanshu Karpe | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<!-- Body with fade-in animation -->
 <body class="fade-in">
-    <!-- Page Header -->
-    <header>
-        <h1>Personal Portfolio - Himanshu Ashwinikumar Karpe</h1>  <!-- Main heading -->
+    <header role="banner">
+        <h1>Personal Portfolio - Himanshu Ashwinikumar Karpe</h1>
     </header>
 
-    <!-- Main Content Area -->
-    <main>
-        <!-- Navigation Section -->
-        <section class="nav-bar">
-            <h2>Quick Navigation</h2>  <!-- Section title -->
-            <nav class="navigation">  <!-- Semantic navigation element -->
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
+    <main role="main">
+        <section class="nav-bar" aria-label="Quick navigation">
+            <h2 class="sr-only">Quick Navigation</h2>
+            <nav class="sticky-nav" aria-label="Main menu">
+                <ul class="main-menu">
+                    <li><a href="#hero" aria-current="page">Home</a></li>
+                    <li class="dropdown" aria-haspopup="true">
+                        <a href="#about">About ▾</a>
+                        <ul class="dropdown-menu" aria-label="About submenu">
+                            <li><a href="#about">Bio</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li class="dropdown" aria-haspopup="true">
+                        <a href="Project.html">Projects ▾</a>
+                        <ul class="dropdown-menu" aria-label="Projects submenu">
+                            <li><a href="Project.html#project1">Attendance System</a></li>
+                            <li><a href="Project.html#project2">Club Posters</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </section>
-
-        <!-- Hero/Home Section -->
-        <section id="hero">
-            <h2>Home</h2>  <!-- Section title -->
-            <article>  <!-- Self-contained content -->
-                <h3>Welcome to My Portfolio</h3>  <!-- Subheading -->
+        <!-- Hero Section -->
+        <section id="hero" aria-labelledby="hero-heading">
+            <h2 id="hero-heading">Home</h2>
+            <article aria-labelledby="welcome-heading">
+                <h3 id="welcome-heading">Welcome to My Portfolio</h3>
                 <p>This is where you can find all about me. My skills, my projects and how you can reach out to me.</p>
 
-                <!-- Who Am I Subsection -->
-                <section id="whoami">
-                    <p><span>Who am I?</span></p>
+                <section id="whoami" aria-labelledby="whoami-heading">
+                    <p id="whoami-heading"><span>Who am I?</span></p>
                     <p>Aspiring Engineer | Creative Coder | Passionate Problem Solver | Lifelong Learner</p>
                 </section>
 
                 <p>Feel free to explore my work and get in touch!</p>
                 <p>Below are highlights of my recent projects:</p>
 
-                <!-- Call-to-Action Links -->
-                <ol> 
+                <ol aria-label="Quick links"> 
                     <li><a href="#projects">View My Projects</a></li>
                     <li><a href="#resume" target="_blank" download="Himanshu_Karpe_Resume.docx">Download Resume</a></li>
                 </ol>
@@ -63,18 +64,16 @@
             </article>
         </section>
         
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>  <!-- Section title -->
-            <div class="about-container">  <!-- Container for layout -->
-                <div class="about-content">  <!-- Flex container -->
-                    <!-- Profile Image -->
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <div class="about-container">
+                <div class="about-content">
                     <figure class="about-image">
-                        <img src="images/Himanshu Karpe.jpg" alt="Profile Picture" loading="lazy">  <!-- Lazy-loaded image -->
-                        <figcaption>Himanshu Ashwinikumar Karpe</figcaption>  <!-- Image caption -->
+                        <img src="images/Himanshu Karpe.jpg" alt="Himanshu Karpe - Profile Picture" loading="lazy">
+                        <figcaption>Himanshu Ashwinikumar Karpe</figcaption>
                     </figure>
                     
-                    <!-- About Text -->
                     <div class="about-text">
                         <p>Hello there! I'm Himanshu Karpe</p>
                         <p class="first-paragraph">A passionate and curious engineering student from Goa, currently in my second year of Electronics and Computer Engineering (SE ECOMP A).</p>
@@ -82,7 +81,6 @@
                     </div>
                 </div>
                 
-                <!-- Additional About Text -->
                 <div class="remaining-text">
                     <p>In the classroom I'm just a student but Outside? 
                     I am actively engaged in social initiatives while being a part of the Leo Club of North Goa and the Lions Club of Sattari Stars, where I get a little creative with my role as a Club Marketing Chairperson and Social Media Manager.</p>
@@ -99,12 +97,12 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills">
-            <h2>My Skills</h2>  <!-- Section title -->
-            <ol>  <!-- Ordered list of skill categories -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">My Skills</h2>
+            <ol aria-label="Skills categories">
                 <li>
-                    <strong>Technical Skills</strong>  <!-- Category title -->
-                    <ul>  <!-- Unordered list of skills -->
+                    <strong>Technical Skills</strong>
+                    <ul aria-label="Technical skills list">
                         <li>HTML, CSS, JavaScript (Basic Web Development)</li>
                         <li>C, C++, Java, Python (Learning & Implementation)</li>
                         <li>Arduino, ESP32, KiCad (Embedded Systems Projects)</li>
@@ -115,14 +113,14 @@
                 </li>
                 <li>
                     <strong>Creative Tools</strong>
-                    <ul>
+                    <ul aria-label="Creative tools list">
                         <li>Canva (Poster Designing & Basic Video Editing)</li>
                         <li>MS Powerpoint, Google Slides (Presentations)</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Soft Skills</strong>
-                    <ul>
+                    <ul aria-label="Soft skills list">
                         <li>Communication</li>
                         <li>Leadership & Teamwork</li>
                         <li>Time Management</li>
@@ -134,12 +132,11 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>  <!-- Section title -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
             <p>Here are some of the projects I have worked on:</p>
 
-            <!-- Description List for Projects -->
-            <dl>
+            <dl aria-label="Projects list">
                 <dt>Project 1: Fingerprint-Based Attendance System</dt>
                 <dd>A hardware-software integrated system using ESP32, Arduino, and a fingerprint sensor to automate attendance tracking. Integrated with a MySQL database and email notification system using PHP and Gmail SMTP</dd>
                 
@@ -151,12 +148,11 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>  <!-- Section title -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
             <p>If you'd like to get in touch, feel free to reach out via email or connect with me for collaborations, projects, or just a good tech conversation!</p>
 
-            <!-- Contact Information -->
-            <ul>
+            <ul aria-label="Contact information">
                 <li>Location: <a href="https://maps.app.goo.gl/JZ65dfRsSYJuWQyBA" target="_blank">Mapusa, Goa, India, 403507</a></li>
                 <li>Email: <a href="mailto:tempohi466@gmail.com">tempohi466@gmail.com</a></li>
                 <li>Phone: <a href="tel:8600300561">8600300561</a></li>
@@ -165,10 +161,9 @@
         </section>
     </main>
 
-    <!-- Page Footer -->
-    <footer>
-        <a href="#">Back to Top</a>  <!-- Navigation link -->
-        <p>&lt;&lt;&lt;&copy; 2025 Himanshu Karpe. All rights reserved.&gt;&gt;&gt;</p>  <!-- Copyright notice -->
+    <footer role="contentinfo">
+        <a href="#" aria-label="Back to top">Back to Top</a>
+        <p>&lt;&lt;&lt;&copy; 2025 Himanshu Karpe. All rights reserved.&gt;&gt;&gt;</p>
     </footer>
 </body>
 </html>
