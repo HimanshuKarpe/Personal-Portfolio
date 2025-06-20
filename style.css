@@ -1,47 +1,27 @@
-*{
-  margin-left: 4px;
-  padding: 0;
-  box-sizing: border-box;
-  font-family:Arial, Helvetica, sans-serif;
-  scroll-behavior: auto;
+/* 
+ * CSS Stylesheet for Portfolio Website
+ * Maintains consistent styling and responsive design
+ */
+
+/* ========== BASE STYLES ========== */
+/* Reset and base styling for all elements */
+* {
+  margin-left: 4px;       /* Consistent left margin throughout */
+  padding: 0;             /* Reset default padding */
+  box-sizing: border-box; /* Include padding/border in element dimensions */
+  font-family: Arial, Helvetica, sans-serif; /* Default font stack */
+  scroll-behavior: auto;  /* Control scroll behavior */
 }
 
+/* Flex container for layout */
 .container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-wrap: wrap;        /* Allow items to wrap on smaller screens */
+  gap: 20px;              /* Consistent spacing between items */
 }
 
-@media (max-width: 768px) {
-  .nav-bar ul {
-    flex-direction: column;
-  }
-
-  .about-container {
-    flex-direction: column;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-width: 1024px) {
-  .nav-bar ul {
-    flex-direction: column;
-  }
-
-  .about-container {
-    flex-direction: column;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
+/* ========== ANIMATIONS ========== */
+/* Fade-in animation for dynamic content loading */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -55,8 +35,10 @@
   }
 }
 
-header{
-  background-color: #4CAF50;
+/* ========== STRUCTURAL STYLES ========== */
+/* Header styling */
+header {
+  background-color: #7d7; /* Medium green */
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -64,167 +46,383 @@ header{
   font-weight: bold;
 }
 
-body{
-  background-color: #f0f0f0;
-  color: #333;
-  line-height: 1.6;
+/* Body styling */
+body {
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333;              /* Dark gray text */
+  line-height: 1.6;         /* Improved readability */
 }
 
-main{
-  max-width: 800px;
-  margin: 20px auto;
+/* Main content container */
+main {
+  max-width: 800px;         /* Constrain width for readability */
+  margin: 20px auto;        /* Center the content */
   padding: 20px;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;       /* Soft rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
-h2{
-  color: #4CAF50;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-#about img{
-  width: 30%;
-  height: auto;
-  border-radius: 8px;
-}
-
-#project1 img{
-  width: 50%;
-  height: auto;
-  border-radius: 8px;
-}
-
-figure{
-  text-align: center;
-  margin: 20px 0;
-}
-
-p{
-  margin: 10px 0;
-  padding-top: 0px;
-  padding-right: 10px;
-  padding-bottom: 0px;
-  padding-left: 10px;
-}
-
-ul{
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-ol{
-  list-style-type: decimal;
-  padding-left: 20px;
-}
-
-dl{
-  padding-left: 20px;
-}
-
-dt{
-  font-weight: bold;
-}
-
-dd{
-  margin-bottom: 10px;
-}
-
-footer{
+/* Footer styling */
+footer {
   text-align: center;
   padding: 10px 0;
-  background-color: #4CAF50;
+  background-color: #7d7;   /* Matching header color */
   color: white;
   position: relative;
   bottom: 0;
   width: 100%;
 }
 
-footer a{
+/* ========== TYPOGRAPHY ========== */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-left: 20px;        /* Consistent left margin for headings */
+}
+
+p {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+/* ========== LIST STYLES ========== */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+dl {
+  padding-left: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 15px;
+}
+
+/* ========== IMAGE STYLES ========== */
+figure {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#about img {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#project1 img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ========== LINK STYLES ========== */
+/* Footer links */
+footer a {
   color: white;
-  text-decoration:underline;
+  text-decoration: underline;
   padding: 20px;
 }
 
-footer a:hover{
+footer a:hover {
   text-decoration: underline;
-  color: #238a28;
-  transform: scale(1.05)
+  color: #238a28;         /* Slightly darker green on hover */
+  transform: scale(1.05)  /* Subtle zoom effect */
 }
 
-a{
-  color: #4CAF50;
-  text-decoration: none;
+/* ========== SECTION-SPECIFIC STYLES ========== */
+/* Navigation Bar */
+.nav-bar {
+  background-color: #d8f0f4; /* Light blue */
+  color: #205c5c;           /* Dark teal text */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-a:hover{
-  display: inline-block;
-  padding: 5px;
+.nav-bar a {
+  color: #205c5c;
+  text-decoration: underline;
+  padding: 10px;
   border-radius: 5px;
-  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+  background-color: #b0e0e6; /* Lighter blue */
+  color: #0d4747;           /* Darker teal */
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+#hero {
+  background-color: #fce4ec; /* Light pink */
+  color: #880e4f;           /* Dark pink/maroon */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#hero a {
+  color: #d81b60;           /* Bright pink */
   text-decoration: underline;
-  color: #238a28;
-  transform: scale(1.05)
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-a:visited{
-  color: #0e4f12;
+#hero a:hover {
+  background-color: #f8bbd0; /* Medium pink */
+  color: #880e4f;
+  transform: scale(1.05);
 }
 
-#project1{
-  background-color: #e8f5e9;
+#hero a:visited {
+  color: #6a1b9a;           /* Purple for visited links */
+}
+
+#whoami {
+  line-height: 18px;
+  padding: 5px 0;
+}
+
+/* About Section */
+#about {
+  background-color: #fff3e0; /* Light orange */
+  color: #89652b;           /* Brown/orange text */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
-#project2{
-  background-color: #e3f2fd;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-content {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0px;
+}
+
+.about-image {
+  flex: 0 0 350px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-image img {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  margin-top: 20px;
+}
+
+.about-image figcaption {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #5c4522;           /* Darker brown */
+  text-emphasis: center;
+}
+
+.first-paragraph {
+  margin: 0;
+  flex: 1;
+  color: #89652b;
+  text-align: justify;
+}
+
+.remaining-text {
+  width: 100%;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #e8f5e9; /* Light green */
+  color: #3e6541;           /* Dark green text */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
-.nav-bar{
-  background-color: #d8f0f4;
+#skills li {
+  line-height: 1.8;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #e3f2fd; /* Light blue */
+  color: #0d47a1;          /* Dark blue text */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
-#hero{
-  background-color: #fce4ec;
+#projects a {
+  color: #0a6af9;          /* Bright blue */
+  text-decoration: underline;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#projects a:hover {
+  background-color: #bbdefb; /* Lighter blue */
+  color: #0d47a1;
+  transform: scale(1.05);
+}
+
+#projects a:visited {
+  color: #021d46;          /* Very dark blue */
+}
+
+/* Individual Project Styles */
+#project1 {
+  background-color: #e8f5e9; /* Light green */
+  color: #3e6541;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
-#about{
-  background-color: #fff3e0;
+#project1 a {
+  color: #72ba78;          /* Medium green */
+  text-decoration: underline;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#project1 a:hover {
+  background-color: #c8e6c9; /* Lighter green */
+  color: #2e5330;          /* Darker green */
+  transform: scale(1.05);
+}
+
+#project1 a:visited {
+  color: #1b3d1b;          /* Very dark green */
+}
+
+#project2 {
+  background-color: #e3f2fd; /* Light blue */
+  color: #0d47a1;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
-#skills{
-  background-color: #e8f5e9;
+#project2 a {
+  color: #3c85f2;          /* Medium blue */
+  text-decoration: underline;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#project2 a:hover {
+  background-color: #bbdefb; /* Lighter blue */
+  color: #0a6af9;          /* Bright blue */
+  transform: scale(1.05);
+}
+
+#project2 a:visited {
+  color: #021d46;          /* Very dark blue */
+}
+
+/* Contact Section */
+#contact {
+  background-color: #fce4ec; /* Light pink */
+  color: #880e4f;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
-#projects{
-  background-color: #e3f2fd;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+#contact a {
+  color: #d81b60;          /* Bright pink */
+  text-decoration: underline;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-#contact{
-  background-color: #fce4ec;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+#contact a:hover {
+  background-color: #f8bbd0; /* Medium pink */
+  color: #880e4f;
+  transform: scale(1.05);
+}
+
+#contact a:visited {
+  color: #6a1b9a;          /* Purple */
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+/* Tablet and smaller devices */
+@media (max-width: 1024px) {
+  .nav-bar ul,
+  .about-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  img {
+    width: 100%;           /* Full width images */
+    height: auto;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .nav-bar ul,
+  .about-container {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .me-container aside img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .about-image {
+    flex: 0 0 100%;
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+  }
+  
+  .first-paragraph {
+    margin-bottom: 20px;
+  }
 }

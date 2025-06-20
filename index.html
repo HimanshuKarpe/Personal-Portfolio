@@ -1,98 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "Portfolio of Himanshu Karpe">
+    <!-- Basic Meta Information -->
+    <meta charset="UTF-8">  <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive viewport -->
+    <meta name="description" content="Portfolio of Himanshu Karpe">  <!-- SEO description -->
+    
+    <!-- Page Title -->
     <title>Personal Portfolio</title>
-    <link rel = "stylesheet" href = "style.css">
-    <link rel = "icon" href = "images/favicon.ico" type = "image/x-icon">
+    
+    <!-- External Resources -->
+    <link rel="stylesheet" href="style.css">  <!-- Main stylesheet -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">  <!-- Favicon -->
 </head>
 
-<body class = "fade-in">
-
+<!-- Body with fade-in animation -->
+<body class="fade-in">
+    <!-- Page Header -->
     <header>
-
-        <h1>Personal Portfolio - Himanshu Ashwinikumar Karpe</h1>
-
+        <h1>Personal Portfolio - Himanshu Ashwinikumar Karpe</h1>  <!-- Main heading -->
     </header>
 
+    <!-- Main Content Area -->
     <main>
-
-        <section class = "nav-bar">
-
-            <h2>Quick Navigation</h2>
-
-            <nav class = "navigation">
-                
+        <!-- Navigation Section -->
+        <section class="nav-bar">
+            <h2>Quick Navigation</h2>  <!-- Section title -->
+            <nav class="navigation">  <!-- Semantic navigation element -->
                 <ul>
-                    <li><a href ="#hero">Home</a></li>
-                    <li><a href ="#about">About</a></li>
-                    <li><a href ="#skills">Skills</a></li>
-                    <li><a href ="#projects">Projects</a></li>
-                    <li><a href ="#contact">Contact</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-
             </nav>
-
         </section>
 
+        <!-- Hero/Home Section -->
         <section id="hero">
+            <h2>Home</h2>  <!-- Section title -->
+            <article>  <!-- Self-contained content -->
+                <h3>Welcome to My Portfolio</h3>  <!-- Subheading -->
+                <p>This is where you can find all about me. My skills, my projects and how you can reach out to me.</p>
 
-            <h2>Home</h2>
-
-            <article>
-
-                <h3>Welcome to My Portfolio</h3>
-                <p>Welcome to my personal portfolio! Here you can find information about me, my skills, projects, and how to contact me</p>
-
-                <p>Aspiring Engineer | Creative Coder | Passionate Problem Solver | Lifelong Learner</p>
+                <!-- Who Am I Subsection -->
+                <section id="whoami">
+                    <p><span>Who am I?</span></p>
+                    <p>Aspiring Engineer | Creative Coder | Passionate Problem Solver | Lifelong Learner</p>
+                </section>
 
                 <p>Feel free to explore my work and get in touch!</p>
-
                 <p>Below are highlights of my recent projects:</p>
 
+                <!-- Call-to-Action Links -->
                 <ol> 
-                    <li><a href = #projects>View My Projects</a></li>
-                    <li><a href = #resume target = "_blank" download="Himanshu_Karpe_Resume.docx">Download Resume</a></li>
-                    </ol>
+                    <li><a href="#projects">View My Projects</a></li>
+                    <li><a href="#resume" target="_blank" download="Himanshu_Karpe_Resume.docx">Download Resume</a></li>
+                </ol>
 
                 <p>Building meaningful digital experiences with purpose, design and code</p>
-           </article>
-
+            </article>
         </section>
         
+        <!-- About Me Section -->
         <section id="about">
-            
-            <h2>About Me</h2>
+            <h2>About Me</h2>  <!-- Section title -->
+            <div class="about-container">  <!-- Container for layout -->
+                <div class="about-content">  <!-- Flex container -->
+                    <!-- Profile Image -->
+                    <figure class="about-image">
+                        <img src="images/Himanshu Karpe.jpg" alt="Profile Picture" loading="lazy">  <!-- Lazy-loaded image -->
+                        <figcaption>Himanshu Ashwinikumar Karpe</figcaption>  <!-- Image caption -->
+                    </figure>
+                    
+                    <!-- About Text -->
+                    <div class="about-text">
+                        <p>Hello there! I'm Himanshu Karpe</p>
+                        <p class="first-paragraph">A passionate and curious engineering student from Goa, currently in my second year of Electronics and Computer Engineering (SE ECOMP A).</p>
+                        <p>My intereste lies in the world of technology and innovation, especially in areas like Artificial Intelligence, Embedded Systems, Web Development, and Automation.</p>
+                    </div>
+                </div>
+                
+                <!-- Additional About Text -->
+                <div class="remaining-text">
+                    <p>In the classroom I'm just a student but Outside? 
+                    I am actively engaged in social initiatives while being a part of the Leo Club of North Goa and the Lions Club of Sattari Stars, where I get a little creative with my role as a Club Marketing Chairperson and Social Media Manager.</p>
+                    
+                    <p>But beyond that I'm a hardcore anime fan who loves to learn something new and beat my own record at solving the rubix cube.</p>
+                    
+                    <p>I believe in creating an impact, creating a  value, whether it's a through a college project, a social cause, or a startup idea.</p>
 
-            <figure>
+                    <p>I am always in search of opportunities to learn and grow. Not just through college book or with  projects, but also with collaboration with others. I believe that every experience is a chance to for me to expand my knowledge and is a fresh beginning.</p>
 
-                <img src="images/Himanshu Karpe.jpg" alt="Profile Picture" width="200" height="200" loading ="lazy">
-                <figcaption>Himanshu Ashwinikumar Karpe</figcaption>
-
-            </figure>
-
-            <p>Hello! I'm Himanshu Karpe, a passionate and curious engineering student from Goa, currently in my second year of Electronics and Computer Engineering (SE ECOMP A). I’m deeply interested in technology, especially in areas like Artificial Intelligence, Embedded Systems, Web Development, and Automation</p>
-            
-            <p>A part from academics, I actively engage in social initiatives with the Leo Club of North Goa and the Lions Club of Sattari Stars, where I serve as a Club Marketing Chairperson and Social Media Manager. I enjoy making posters, solving Rubik’s cubes, watching anime, and exploring new skills every day</p>
-            
-            <p>I believe in building things that create value, whether it's a project for college, a social cause, or a startup idea</p>
-
-            <p>I am constantly seeking opportunities to learn and grow, whether through formal education, personal projects, or collaboration with others. I believe that every experience is a chance to expand my knowledge and skills.</p>
-
-            <p>My journey is just beginning, and I’m excited to learn, grow, and contribute to the world of technology and beyond</p>
-            
+                    <p>And my goal?  It's to grow, and contribute to the world of technology and beyond.</p>
+                </div>
+            </div>
         </section>
 
+        <!-- Skills Section -->
         <section id="skills">
-
-            <h2>My Skills</h2>
-
-            <ol>
+            <h2>My Skills</h2>  <!-- Section title -->
+            <ol>  <!-- Ordered list of skill categories -->
                 <li>
-                    <strong>Technical Skills</strong>
-                    <ul>
+                    <strong>Technical Skills</strong>  <!-- Category title -->
+                    <ul>  <!-- Unordered list of skills -->
                         <li>HTML, CSS, JavaScript (Basic Web Development)</li>
                         <li>C, C++, Java, Python (Learning & Implementation)</li>
                         <li>Arduino, ESP32, KiCad (Embedded Systems Projects)</li>
@@ -119,15 +131,14 @@
                     </ul>
                 </li>
             </ol>
-
         </section>
 
+        <!-- Projects Section -->
         <section id="projects">
-
-            <h2>Projects</h2>
-
+            <h2>Projects</h2>  <!-- Section title -->
             <p>Here are some of the projects I have worked on:</p>
 
+            <!-- Description List for Projects -->
             <dl>
                 <dt>Project 1: Fingerprint-Based Attendance System</dt>
                 <dd>A hardware-software integrated system using ESP32, Arduino, and a fingerprint sensor to automate attendance tracking. Integrated with a MySQL database and email notification system using PHP and Gmail SMTP</dd>
@@ -136,30 +147,28 @@
                 <dd>Designed more than 50+ posters for events, awareness drives, and campaigns using Canva. Helped boost engagement and visibility for club activities</dd>
             </dl>
 
-            <p>For more details, you can view the project on:</p><a href = "Project.html">Project Page</a>
-
+            <p>For more details, you can view the project on: <a href="Project.html">Project Page</a></p>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
-
-            <h2>Contact Me</h2>
-
+            <h2>Contact Me</h2>  <!-- Section title -->
             <p>If you'd like to get in touch, feel free to reach out via email or connect with me for collaborations, projects, or just a good tech conversation!</p>
 
+            <!-- Contact Information -->
             <ul>
-                <li>Location:<a href = "https://maps.app.goo.gl/JZ65dfRsSYJuWQyBA" target = "_blank">Mapusa, Goa, India, 403507</a></li>
-                <li>Email:<a href = "mailto:tempohi466@gmail.com">tempohi466@gmail.com</a></li>
-                <li>Phone:<a href = "tel:8600300561">8600300561</a></li>
-                <li>LinkedIn:<a href = "https://www.linkedin.com/in/himanshu-karpe-006b52294/" target = "_blank">Himanshu Karpe</a></li>
+                <li>Location: <a href="https://maps.app.goo.gl/JZ65dfRsSYJuWQyBA" target="_blank">Mapusa, Goa, India, 403507</a></li>
+                <li>Email: <a href="mailto:tempohi466@gmail.com">tempohi466@gmail.com</a></li>
+                <li>Phone: <a href="tel:8600300561">8600300561</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/himanshu-karpe-006b52294/" target="_blank">Himanshu Karpe</a></li>
             </ul>
-
         </section>
-
     </main>
 
+    <!-- Page Footer -->
     <footer>
-        <a href = "#">Back to Top</a>
-        <p>&lt;&lt;&lt;&copy; 2025 Himanshu Karpe. All rights reserved.&gt;&gt;&gt;</p>
+        <a href="#">Back to Top</a>  <!-- Navigation link -->
+        <p>&lt;&lt;&lt;&copy; 2025 Himanshu Karpe. All rights reserved.&gt;&gt;&gt;</p>  <!-- Copyright notice -->
     </footer>
 </body>
 </html>
