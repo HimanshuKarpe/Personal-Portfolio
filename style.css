@@ -456,7 +456,7 @@ footer a:hover {
 @media (max-width: 1024px) {
   .nav-bar ul,
   .about-container {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   img {
@@ -468,7 +468,7 @@ footer a:hover {
 @media (max-width: 768px) {
   .nav-bar ul,
   .about-container {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .main-menu {
