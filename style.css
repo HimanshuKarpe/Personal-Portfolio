@@ -468,11 +468,11 @@ footer a:hover {
 @media (max-width: 768px) {
   .nav-bar ul,
   .about-container {
-    flex-direction: column;
+    flex-direction: inline-flex;
   }
 
   .main-menu {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
